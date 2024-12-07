@@ -14,12 +14,10 @@ list_2 = sorted(list_2)
 
 combined = zip(list_1, list_2)
 
-total_diff = sum(abs(pair[0] - pair[1]) for pair in combined)
-
-print(total_diff)
+p1_ans = sum(abs(pair[0] - pair[1]) for pair in combined)
 
 # Part 2:
 
-ans = sum((list_2.count(nums) * nums) for nums in list_1)
+p2_ans = sum((list_2.count(nums) * nums) for nums in list_1)
 
-print(ans)
+print(f"P1 ans: {p1_ans} | P2 ans: {p2_ans}")
